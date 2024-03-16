@@ -31,7 +31,41 @@ let arr = [1,20,"John","blue"]
 
 let integerArray = [2, 5, 7, 9, 11]
 
-console.log(integerArray.length)
-console.log(integerArray[0])
-console.log(integerArray[1])
-console.log(integerArray[integerArray.length-1])
+//console.log(integerArray.length)
+//console.log(integerArray[0])
+//console.log(integerArray[1])
+//console.log(integerArray[integerArray.length-1])
+
+//object
+
+
+const person = {
+    name: { 
+        firstName: "John",
+        secondName: "Doe"
+    },
+    age: 25,
+    place: "London"
+}
+
+//console.log(person)
+
+const student = {
+    name: "John",
+    age: 25,
+    courses: [
+        {
+            courseName: "JS",
+            courseCredits: 3
+
+        },
+        {
+            courseName: "MERN",
+            courseCredits: 4
+        }
+    ]
+}
+
+console.log(student.courses)
+console.log(student.courses[0])
+console.log(student.courses[1].courseName)
