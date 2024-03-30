@@ -240,8 +240,33 @@ function printNameNew (name) {
   console.log(name)
 }
 
-printName("Gowtham")
-printName("Gowri")
+//printName("Gowtham")
+//printName("Gowri")
+
+
 
 //let bike = 1
 //bike = "r15"
+
+
+const consoleLogFn = () => {
+  console.log('This is a console.log statement')
+}
+
+const returnValueFn = () => {
+  return 'This is a return statement'
+}
+
+//consoleLogFn()
+let returnValue = returnValueFn()
+//let returnValue = 'This is a return statement'
+//console.log(returnValue)
+
+//Early return
+const fun = () => {
+  console.log('1') 
+  return true
+  console.log('2')
+}
+
+console.log(fun())  
