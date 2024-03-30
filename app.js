@@ -236,5 +236,12 @@ const printName = (name) => {
   console.log(name)
 }
 
+function printNameNew (name) {
+  console.log(name)
+}
+
 printName("Gowtham")
 printName("Gowri")
+
+//let bike = 1
+//bike = "r15"
