@@ -236,7 +236,7 @@ const printName = (name) => {
   console.log(name)
 }
 
-function printNameNew (name) {
+function length (name) {
   console.log(name)
 }
 
@@ -269,4 +269,79 @@ const fun = () => {
   console.log('2')
 }
 
-console.log(fun())  
+//console.log(fun())  
+
+// 1. Write function syntax
+// 2. Get the user name with prompt
+// 3. log the length using name.length
+
+const printLength = () => {
+  const name = prompt('Enter name')
+  console.log(name.length)
+}
+
+// printLength()
+
+// const addFn = (a, b) => {
+//   console.log(a + b)
+// }
+
+
+// console.log(addFn(5, 4))
+
+
+// Callback 
+// const printSum = (num) => {
+//   console.log(`Sum: ${num}`)
+// }
+
+// const addFn = (a, b, fun) => {
+//   let sum = a + b
+//   fun(sum) // printSum(9)
+// }
+
+// addFn(5, 4, printSum)
+
+// a = 5, b = 4, fun = cFun; 
+// functions which are parameters of other functions
+
+// JS Code
+// let myNum = 3
+// if (myNum % 2 === 0) {
+//   console.log("even")
+// } else {
+//   console.log("odd")
+// }
+
+// Pseudo code
+// define a variable myNum
+// check if myNum remainder is 0 when devided by 2
+// if 0 print even
+// else print odd
+
+// const printAge = (age) => {
+//   console.log(age)
+// }
+
+// const isAgeOdd = (age, callback) => {
+//   if (age % 2 === 1) {
+//     callback(age)
+//   } else {
+//     console.log('even')
+//   }
+// }
+
+// isAgeOdd(5, printAge) // 5
+// isAgeOdd(2, printAge) // even
+
+const j = 9 // global scope
+
+if (true) {
+  const k = 10 // local scope -> block scoped
+  console.log(k)
+  console.log(j)
+}
+
+console.log(k)
+
+// let and const are block scoped
